@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Dices, Hand, Play, Plus, Shuffle, Trash2 } from 'lucide-react'
+import { Dices, Hand, Play, Plus, RotateCcw, Shuffle, Trash2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
@@ -24,6 +24,7 @@ type Props = {
   onRangeChange: (r: { min: number; max: number }) => void
   onGenerate: () => void
   onSolve: () => void
+  onReset: () => void
 }
 
 const selectClass =
@@ -40,6 +41,7 @@ export function ConfigPanel({
   onRangeChange,
   onGenerate,
   onSolve,
+  onReset,
 }: Props) {
   const nodes = Array.from({ length: nodeCount }, (_, i) => i + 1)
   const [from, setFrom] = useState('1')
@@ -230,6 +232,10 @@ export function ConfigPanel({
         <Button size="lg" onClick={onSolve} disabled={edges.length === 0}>
           <Play aria-hidden="true" />
           Resolver TSP
+        </Button>
+        <Button variant="outline" onClick={onReset} disabled={edges.length === 0}>
+          <RotateCcw aria-hidden="true" />
+          Limpiar grafo
         </Button>
       </CardContent>
     </Card>

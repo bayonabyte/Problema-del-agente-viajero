@@ -12,6 +12,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$hand$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Hand$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/hand.mjs [app-ssr] (ecmascript) <export default as Hand>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$play$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Play$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/play.mjs [app-ssr] (ecmascript) <export default as Play>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plus$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Plus$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/plus.mjs [app-ssr] (ecmascript) <export default as Plus>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$rotate$2d$ccw$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__RotateCcw$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/rotate-ccw.mjs [app-ssr] (ecmascript) <export default as RotateCcw>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shuffle$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Shuffle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shuffle.mjs [app-ssr] (ecmascript) <export default as Shuffle>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trash.mjs [app-ssr] (ecmascript) <export default as Trash2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/button.tsx [app-ssr] (ecmascript)");
@@ -37,7 +38,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tsp$2e$ts__$5b$app$2d
 ;
 ;
 const selectClass = 'h-8 w-full rounded-lg border border-input bg-transparent px-2 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 dark:bg-input/30';
-function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, onEdgesChange, range, onRangeChange, onGenerate, onSolve }) {
+function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, onEdgesChange, range, onRangeChange, onGenerate, onSolve, onReset }) {
     const nodes = Array.from({
         length: nodeCount
     }, (_, i)=>i + 1);
@@ -76,20 +77,20 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                         children: "Configuración del grafo"
                     }, void 0, false, {
                         fileName: "[project]/components/tsp/config-panel.tsx",
-                        lineNumber: 77,
+                        lineNumber: 79,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardDescription"], {
                         children: "Define los nodos del 5 al 10"
                     }, void 0, false, {
                         fileName: "[project]/components/tsp/config-panel.tsx",
-                        lineNumber: 78,
+                        lineNumber: 80,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/tsp/config-panel.tsx",
-                lineNumber: 76,
+                lineNumber: 78,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -106,7 +107,7 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                         children: "Número de nodos"
                                     }, void 0, false, {
                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 85,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -122,13 +123,13 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                         className: "h-8 w-16 text-center tabular-nums"
                                     }, void 0, false, {
                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                        lineNumber: 84,
+                                        lineNumber: 86,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                lineNumber: 82,
+                                lineNumber: 84,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$slider$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Slider"], {
@@ -142,7 +143,7 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                 onValueChange: (v)=>onNodeCountChange(Array.isArray(v) ? v[0] : v)
                             }, void 0, false, {
                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                lineNumber: 97,
+                                lineNumber: 99,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -152,31 +153,31 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                         children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tsp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MIN_NODES"]
                                     }, void 0, false, {
                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                        lineNumber: 106,
+                                        lineNumber: 108,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tsp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MAX_NODES"]
                                     }, void 0, false, {
                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                        lineNumber: 107,
+                                        lineNumber: 109,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                lineNumber: 105,
+                                lineNumber: 107,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/tsp/config-panel.tsx",
-                        lineNumber: 81,
+                        lineNumber: 83,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$separator$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Separator"], {}, void 0, false, {
                         fileName: "[project]/components/tsp/config-panel.tsx",
-                        lineNumber: 111,
+                        lineNumber: 113,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Tabs"], {
@@ -193,14 +194,14 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                                 "aria-hidden": "true"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                                lineNumber: 116,
+                                                lineNumber: 118,
                                                 columnNumber: 15
                                             }, this),
                                             "Modo Aleatorio"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                        lineNumber: 115,
+                                        lineNumber: 117,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TabsTrigger"], {
@@ -210,20 +211,20 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                                 "aria-hidden": "true"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                                lineNumber: 120,
+                                                lineNumber: 122,
                                                 columnNumber: 15
                                             }, this),
                                             "Modo Manual"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                        lineNumber: 119,
+                                        lineNumber: 121,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                lineNumber: 114,
+                                lineNumber: 116,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TabsContent"], {
@@ -241,7 +242,7 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                                         children: "Peso mínimo"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                                        lineNumber: 128,
+                                                        lineNumber: 130,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -255,13 +256,13 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                                             })
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                                        lineNumber: 129,
+                                                        lineNumber: 131,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                                lineNumber: 127,
+                                                lineNumber: 129,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -272,7 +273,7 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                                         children: "Peso máximo"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                                        lineNumber: 138,
+                                                        lineNumber: 140,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -287,19 +288,19 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                                             })
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                                        lineNumber: 139,
+                                                        lineNumber: 141,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                                lineNumber: 137,
+                                                lineNumber: 139,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                        lineNumber: 126,
+                                        lineNumber: 128,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -310,20 +311,20 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                                 "aria-hidden": "true"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                                lineNumber: 150,
+                                                lineNumber: 152,
                                                 columnNumber: 15
                                             }, this),
                                             "Generar Grafo Aleatorio"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                        lineNumber: 149,
+                                        lineNumber: 151,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                lineNumber: 125,
+                                lineNumber: 127,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TabsContent"], {
@@ -346,7 +347,7 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                                                 children: "Nodo 1"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                                                lineNumber: 159,
+                                                                lineNumber: 161,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -359,18 +360,18 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                                                         children: n
                                                                     }, n, false, {
                                                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                                                        lineNumber: 162,
+                                                                        lineNumber: 164,
                                                                         columnNumber: 23
                                                                     }, this))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                                                lineNumber: 160,
+                                                                lineNumber: 162,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                                        lineNumber: 158,
+                                                        lineNumber: 160,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -381,7 +382,7 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                                                 children: "Nodo 2"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                                                lineNumber: 167,
+                                                                lineNumber: 169,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -394,18 +395,18 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                                                         children: n
                                                                     }, n, false, {
                                                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                                                        lineNumber: 170,
+                                                                        lineNumber: 172,
                                                                         columnNumber: 23
                                                                     }, this))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                                                lineNumber: 168,
+                                                                lineNumber: 170,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                                        lineNumber: 166,
+                                                        lineNumber: 168,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -416,7 +417,7 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                                                 children: "Peso"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                                                lineNumber: 175,
+                                                                lineNumber: 177,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -427,19 +428,19 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                                                 onChange: (e)=>setWeight(e.target.value)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                                                lineNumber: 176,
+                                                                lineNumber: 178,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                                        lineNumber: 174,
+                                                        lineNumber: 176,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                                lineNumber: 157,
+                                                lineNumber: 159,
                                                 columnNumber: 15
                                             }, this),
                                             error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -448,7 +449,7 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                                 children: error
                                             }, void 0, false, {
                                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                                lineNumber: 180,
+                                                lineNumber: 182,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -459,20 +460,20 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                                         "aria-hidden": "true"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                                        lineNumber: 185,
+                                                        lineNumber: 187,
                                                         columnNumber: 17
                                                     }, this),
                                                     "Agregar arista"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                                lineNumber: 184,
+                                                lineNumber: 186,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                        lineNumber: 156,
+                                        lineNumber: 158,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -483,7 +484,7 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                                 children: "Aristas"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                                lineNumber: 191,
+                                                lineNumber: 193,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -494,13 +495,13 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                                lineNumber: 192,
+                                                lineNumber: 194,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                        lineNumber: 190,
+                                        lineNumber: 192,
                                         columnNumber: 13
                                     }, this),
                                     edges.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -508,7 +509,7 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                         children: "Aún no hay aristas. Agrega la primera arriba."
                                     }, void 0, false, {
                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                        lineNumber: 195,
+                                        lineNumber: 197,
                                         columnNumber: 15
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$scroll$2d$area$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ScrollArea"], {
                                         className: "h-52 rounded-lg border",
@@ -528,7 +529,7 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/tsp/config-panel.tsx",
-                                                            lineNumber: 205,
+                                                            lineNumber: 207,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -542,7 +543,7 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/tsp/config-panel.tsx",
-                                                                    lineNumber: 209,
+                                                                    lineNumber: 211,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -554,52 +555,52 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                                                         "aria-hidden": "true"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                                                        lineNumber: 216,
+                                                                        lineNumber: 218,
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/tsp/config-panel.tsx",
-                                                                    lineNumber: 210,
+                                                                    lineNumber: 212,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/tsp/config-panel.tsx",
-                                                            lineNumber: 208,
+                                                            lineNumber: 210,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
                                                 }, key, true, {
                                                     fileName: "[project]/components/tsp/config-panel.tsx",
-                                                    lineNumber: 204,
+                                                    lineNumber: 206,
                                                     columnNumber: 23
                                                 }, this);
                                             })
                                         }, void 0, false, {
                                             fileName: "[project]/components/tsp/config-panel.tsx",
-                                            lineNumber: 200,
+                                            lineNumber: 202,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/tsp/config-panel.tsx",
-                                        lineNumber: 199,
+                                        lineNumber: 201,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                lineNumber: 155,
+                                lineNumber: 157,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/tsp/config-panel.tsx",
-                        lineNumber: 113,
+                        lineNumber: 115,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$separator$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Separator"], {}, void 0, false, {
                         fileName: "[project]/components/tsp/config-panel.tsx",
-                        lineNumber: 228,
+                        lineNumber: 230,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -611,26 +612,45 @@ function ConfigPanel({ nodeCount, onNodeCountChange, mode, onModeChange, edges, 
                                 "aria-hidden": "true"
                             }, void 0, false, {
                                 fileName: "[project]/components/tsp/config-panel.tsx",
-                                lineNumber: 231,
+                                lineNumber: 233,
                                 columnNumber: 11
                             }, this),
                             "Resolver TSP"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/tsp/config-panel.tsx",
-                        lineNumber: 230,
+                        lineNumber: 232,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                        variant: "outline",
+                        onClick: onReset,
+                        disabled: edges.length === 0,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$rotate$2d$ccw$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__RotateCcw$3e$__["RotateCcw"], {
+                                "aria-hidden": "true"
+                            }, void 0, false, {
+                                fileName: "[project]/components/tsp/config-panel.tsx",
+                                lineNumber: 237,
+                                columnNumber: 11
+                            }, this),
+                            "Limpiar grafo"
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/tsp/config-panel.tsx",
+                        lineNumber: 236,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/tsp/config-panel.tsx",
-                lineNumber: 80,
+                lineNumber: 82,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/tsp/config-panel.tsx",
-        lineNumber: 75,
+        lineNumber: 77,
         columnNumber: 5
     }, this);
 }
@@ -650,38 +670,37 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tsp$2e$ts__$5b$app$2d
 ;
 ;
 ;
-function CostMatrix({ matrix, highlightedRoute }) {
-    const n = matrix.length;
+function CostMatrix({ matrix, highlightedRoute, missingEdges, highlightKind }) {
     const onRoute = new Set();
-    if (highlightedRoute) {
-        for(let i = 0; i < highlightedRoute.length - 1; i++){
-            onRoute.add((0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tsp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["edgeKey"])(highlightedRoute[i], highlightedRoute[i + 1]));
-        }
+    const suggested = new Set(missingEdges.map(([from, to])=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tsp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["edgeKey"])(from, to)));
+    for(let index = 0; highlightedRoute && index < highlightedRoute.length - 1; index++){
+        onRoute.add((0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tsp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["edgeKey"])(highlightedRoute[index], highlightedRoute[index + 1]));
     }
+    const routeColor = highlightKind === 'optimal' ? 'bg-route text-white' : 'bg-preview text-white';
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
         className: "min-w-0",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
-                        children: "Matriz de Costos"
+                        children: "Matriz de costos"
                     }, void 0, false, {
                         fileName: "[project]/components/tsp/cost-matrix.tsx",
-                        lineNumber: 22,
-                        columnNumber: 9
+                        lineNumber: 20,
+                        columnNumber: 48
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardDescription"], {
-                        children: "Matriz de adyacencia · ∞ indica ausencia de arista."
+                        children: "Azul: conexión de la ruta. Gris: sugerencia de arista faltante."
                     }, void 0, false, {
                         fileName: "[project]/components/tsp/cost-matrix.tsx",
-                        lineNumber: 23,
-                        columnNumber: 9
+                        lineNumber: 20,
+                        columnNumber: 87
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/tsp/cost-matrix.tsx",
-                lineNumber: 21,
-                columnNumber: 7
+                lineNumber: 20,
+                columnNumber: 36
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
                 className: "overflow-x-auto",
@@ -693,49 +712,39 @@ function CostMatrix({ matrix, highlightedRoute }) {
                             children: "Matriz de costos entre nodos"
                         }, void 0, false, {
                             fileName: "[project]/components/tsp/cost-matrix.tsx",
-                            lineNumber: 27,
-                            columnNumber: 11
+                            lineNumber: 20,
+                            columnNumber: 331
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                         scope: "col",
-                                        className: "size-9 text-xs text-muted-foreground",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "sr-only",
-                                            children: "Origen / destino"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/tsp/cost-matrix.tsx",
-                                            lineNumber: 31,
-                                            columnNumber: 17
-                                        }, this)
+                                        className: "size-9"
                                     }, void 0, false, {
                                         fileName: "[project]/components/tsp/cost-matrix.tsx",
-                                        lineNumber: 30,
-                                        columnNumber: 15
+                                        lineNumber: 20,
+                                        columnNumber: 409
                                     }, this),
-                                    Array.from({
-                                        length: n
-                                    }, (_, j)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                    matrix.map((_, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
                                             scope: "col",
                                             className: "h-9 min-w-9 rounded-md bg-muted text-xs font-semibold",
-                                            children: j + 1
-                                        }, j, false, {
+                                            children: index + 1
+                                        }, index, false, {
                                             fileName: "[project]/components/tsp/cost-matrix.tsx",
-                                            lineNumber: 34,
-                                            columnNumber: 17
+                                            lineNumber: 20,
+                                            columnNumber: 472
                                         }, this))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/tsp/cost-matrix.tsx",
-                                lineNumber: 29,
-                                columnNumber: 13
+                                lineNumber: 20,
+                                columnNumber: 405
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/tsp/cost-matrix.tsx",
-                            lineNumber: 28,
-                            columnNumber: 11
+                            lineNumber: 20,
+                            columnNumber: 398
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
                             children: matrix.map((row, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
@@ -746,54 +755,49 @@ function CostMatrix({ matrix, highlightedRoute }) {
                                             children: i + 1
                                         }, void 0, false, {
                                             fileName: "[project]/components/tsp/cost-matrix.tsx",
-                                            lineNumber: 43,
-                                            columnNumber: 17
+                                            lineNumber: 20,
+                                            columnNumber: 640
                                         }, this),
-                                        row.map((v, j)=>{
-                                            const highlighted = i !== j && onRoute.has((0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tsp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["edgeKey"])(i + 1, j + 1));
+                                        row.map((value, j)=>{
+                                            const key = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tsp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["edgeKey"])(i + 1, j + 1);
+                                            const isSuggestion = i !== j && suggested.has(key);
+                                            const isRoute = i !== j && onRoute.has(key) && !isSuggestion;
                                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('h-9 min-w-9 rounded-md text-center', i === j && 'bg-muted/60 text-muted-foreground', v === Infinity && 'text-muted-foreground/50', v !== Infinity && i !== j && 'bg-secondary/50 font-medium', highlighted && 'bg-route text-white'),
-                                                children: v === Infinity ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    "aria-label": "infinito",
-                                                    children: "∞"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/tsp/cost-matrix.tsx",
-                                                    lineNumber: 59,
-                                                    columnNumber: 41
-                                                }, this) : v
+                                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('h-9 min-w-9 rounded-md text-center', i === j && 'bg-muted/60 text-muted-foreground', value === Infinity && 'text-muted-foreground/50', value !== Infinity && i !== j && 'bg-secondary/50 font-medium', isRoute && routeColor, isSuggestion && 'bg-slate-400 text-slate-950 ring-1 ring-inset ring-slate-600 dark:bg-slate-600 dark:text-white dark:ring-slate-400'),
+                                                children: isSuggestion ? '?' : value === Infinity ? '∞' : value
                                             }, j, false, {
                                                 fileName: "[project]/components/tsp/cost-matrix.tsx",
-                                                lineNumber: 49,
-                                                columnNumber: 21
+                                                lineNumber: 20,
+                                                columnNumber: 910
                                             }, this);
                                         })
                                     ]
                                 }, i, true, {
                                     fileName: "[project]/components/tsp/cost-matrix.tsx",
-                                    lineNumber: 42,
-                                    columnNumber: 15
+                                    lineNumber: 20,
+                                    columnNumber: 628
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/tsp/cost-matrix.tsx",
-                            lineNumber: 40,
-                            columnNumber: 11
+                            lineNumber: 20,
+                            columnNumber: 597
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/tsp/cost-matrix.tsx",
-                    lineNumber: 26,
-                    columnNumber: 9
+                    lineNumber: 20,
+                    columnNumber: 239
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/tsp/cost-matrix.tsx",
-                lineNumber: 25,
-                columnNumber: 7
+                lineNumber: 20,
+                columnNumber: 198
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/tsp/cost-matrix.tsx",
         lineNumber: 20,
-        columnNumber: 5
+        columnNumber: 10
     }, this);
 }
 }),
@@ -843,6 +847,9 @@ function GraphCanvas({ nodeCount, edges, highlighted }) {
     }, [
         highlighted
     ]);
+    const missingEdges = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>new Set((highlighted?.missingEdges ?? []).map(([from, to])=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tsp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["edgeKey"])(from, to))), [
+        highlighted
+    ]);
     const order = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
         const m = new Map();
         highlighted?.route.slice(0, -1).forEach((node, i)=>m.set(node, i + 1));
@@ -850,7 +857,7 @@ function GraphCanvas({ nodeCount, edges, highlighted }) {
     }, [
         highlighted
     ]);
-    const accent = highlighted?.kind === 'preview' ? 'var(--preview)' : 'var(--route)';
+    const accent = highlighted?.kind === 'optimal' ? 'var(--route)' : 'var(--preview)';
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
         className: "min-w-0",
         children: [
@@ -860,20 +867,20 @@ function GraphCanvas({ nodeCount, edges, highlighted }) {
                         children: "Visualización del grafo"
                     }, void 0, false, {
                         fileName: "[project]/components/tsp/graph-canvas.tsx",
-                        lineNumber: 48,
+                        lineNumber: 60,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardDescription"], {
                         children: highlighted ? highlighted.kind === 'optimal' ? 'Ruta óptima resaltada; los números indican el orden de visita.' : 'Vista previa de la ruta seleccionada.' : `${nodeCount} nodos · ${edges.length} aristas`
                     }, void 0, false, {
                         fileName: "[project]/components/tsp/graph-canvas.tsx",
-                        lineNumber: 49,
+                        lineNumber: 61,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/tsp/graph-canvas.tsx",
-                lineNumber: 47,
+                lineNumber: 59,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -884,30 +891,53 @@ function GraphCanvas({ nodeCount, edges, highlighted }) {
                     "aria-label": `Grafo con ${nodeCount} nodos y ${edges.length} aristas`,
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("marker", {
-                                id: "arrow",
-                                viewBox: "0 0 10 10",
-                                refX: "9",
-                                refY: "5",
-                                markerWidth: "5",
-                                markerHeight: "5",
-                                orient: "auto-start-reverse",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                    d: "M0,0 L10,5 L0,10 z",
-                                    fill: accent
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("marker", {
+                                    id: "arrow",
+                                    viewBox: "0 0 10 10",
+                                    refX: "9",
+                                    refY: "5",
+                                    markerWidth: "5",
+                                    markerHeight: "5",
+                                    orient: "auto-start-reverse",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                        d: "M0,0 L10,5 L0,10 z",
+                                        fill: accent
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/tsp/graph-canvas.tsx",
+                                        lineNumber: 78,
+                                        columnNumber: 15
+                                    }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/tsp/graph-canvas.tsx",
-                                    lineNumber: 66,
-                                    columnNumber: 15
+                                    lineNumber: 77,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("marker", {
+                                    id: "arrow-missing",
+                                    viewBox: "0 0 10 10",
+                                    refX: "9",
+                                    refY: "5",
+                                    markerWidth: "5",
+                                    markerHeight: "5",
+                                    orient: "auto-start-reverse",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                        d: "M0,0 L10,5 L0,10 z",
+                                        fill: "var(--muted-foreground)"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/tsp/graph-canvas.tsx",
+                                        lineNumber: 81,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/components/tsp/graph-canvas.tsx",
+                                    lineNumber: 80,
+                                    columnNumber: 13
                                 }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/components/tsp/graph-canvas.tsx",
-                                lineNumber: 65,
-                                columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/components/tsp/graph-canvas.tsx",
-                            lineNumber: 64,
+                            lineNumber: 76,
                             columnNumber: 11
                         }, this),
                         edges.map((e)=>{
@@ -926,7 +956,7 @@ function GraphCanvas({ nodeCount, edges, highlighted }) {
                                 opacity: highlighted ? 0.45 : 1
                             }, key, false, {
                                 fileName: "[project]/components/tsp/graph-canvas.tsx",
-                                lineNumber: 77,
+                                lineNumber: 92,
                                 columnNumber: 15
                             }, this);
                         }),
@@ -940,19 +970,20 @@ function GraphCanvas({ nodeCount, edges, highlighted }) {
                             const len = Math.hypot(dx, dy);
                             const ox = dx / len * (NODE_R + 3);
                             const oy = dy / len * (NODE_R + 3);
+                            const missing = missingEdges.has(key);
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
                                 x1: a.x + ox,
                                 y1: a.y + oy,
                                 x2: b.x - ox,
                                 y2: b.y - oy,
-                                stroke: accent,
+                                stroke: missing ? 'var(--muted-foreground)' : accent,
                                 strokeWidth: 4,
                                 strokeLinecap: "round",
-                                markerEnd: "url(#arrow)",
-                                strokeDasharray: highlighted?.kind === 'preview' ? '8 5' : undefined
+                                markerEnd: missing ? 'url(#arrow-missing)' : 'url(#arrow)',
+                                strokeDasharray: missing || highlighted?.kind === 'preview' ? '8 5' : undefined
                             }, key, false, {
                                 fileName: "[project]/components/tsp/graph-canvas.tsx",
-                                lineNumber: 99,
+                                lineNumber: 115,
                                 columnNumber: 15
                             }, this);
                         }),
@@ -977,7 +1008,7 @@ function GraphCanvas({ nodeCount, edges, highlighted }) {
                                         stroke: onRoute ? accent : 'var(--edge)'
                                     }, void 0, false, {
                                         fileName: "[project]/components/tsp/graph-canvas.tsx",
-                                        lineNumber: 125,
+                                        lineNumber: 141,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
@@ -991,13 +1022,13 @@ function GraphCanvas({ nodeCount, edges, highlighted }) {
                                         children: label
                                     }, void 0, false, {
                                         fileName: "[project]/components/tsp/graph-canvas.tsx",
-                                        lineNumber: 134,
+                                        lineNumber: 150,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, `w-${e.u}-${e.v}`, true, {
                                 fileName: "[project]/components/tsp/graph-canvas.tsx",
-                                lineNumber: 124,
+                                lineNumber: 140,
                                 columnNumber: 15
                             }, this);
                         }),
@@ -1017,7 +1048,7 @@ function GraphCanvas({ nodeCount, edges, highlighted }) {
                                         strokeWidth: step ? 3 : 1.5
                                     }, void 0, false, {
                                         fileName: "[project]/components/tsp/graph-canvas.tsx",
-                                        lineNumber: 156,
+                                        lineNumber: 172,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
@@ -1030,7 +1061,7 @@ function GraphCanvas({ nodeCount, edges, highlighted }) {
                                         children: node
                                     }, void 0, false, {
                                         fileName: "[project]/components/tsp/graph-canvas.tsx",
-                                        lineNumber: 164,
+                                        lineNumber: 180,
                                         columnNumber: 17
                                     }, this),
                                     step && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
@@ -1042,7 +1073,7 @@ function GraphCanvas({ nodeCount, edges, highlighted }) {
                                                 fill: accent
                                             }, void 0, false, {
                                                 fileName: "[project]/components/tsp/graph-canvas.tsx",
-                                                lineNumber: 169,
+                                                lineNumber: 185,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("text", {
@@ -1055,37 +1086,37 @@ function GraphCanvas({ nodeCount, edges, highlighted }) {
                                                 children: step
                                             }, void 0, false, {
                                                 fileName: "[project]/components/tsp/graph-canvas.tsx",
-                                                lineNumber: 170,
+                                                lineNumber: 186,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/tsp/graph-canvas.tsx",
-                                        lineNumber: 168,
+                                        lineNumber: 184,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, node, true, {
                                 fileName: "[project]/components/tsp/graph-canvas.tsx",
-                                lineNumber: 155,
+                                lineNumber: 171,
                                 columnNumber: 15
                             }, this);
                         })
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/tsp/graph-canvas.tsx",
-                    lineNumber: 58,
+                    lineNumber: 70,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/tsp/graph-canvas.tsx",
-                lineNumber: 57,
+                lineNumber: 69,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/tsp/graph-canvas.tsx",
-        lineNumber: 46,
+        lineNumber: 58,
         columnNumber: 5
     }, this);
 }
@@ -1100,7 +1131,6 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$triangle$2d$alert$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertTriangle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/triangle-alert.mjs [app-ssr] (ecmascript) <export default as AlertTriangle>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-down.mjs [app-ssr] (ecmascript) <export default as ChevronDown>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-left.mjs [app-ssr] (ecmascript) <export default as ChevronLeft>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-right.mjs [app-ssr] (ecmascript) <export default as ChevronRight>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trophy.mjs [app-ssr] (ecmascript) <export default as Trophy>");
@@ -1123,43 +1153,27 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tsp$2e$ts__$5b$app$2d
 ;
 ;
 const PAGE_SIZE = 25;
-function ResultsPanel({ result, previewIndex, onPreview, onExport, onReset, hasEdges }) {
-    const [open, setOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
-    const [sortByCost, setSortByCost] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [page, setPage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
-    const [pinned, setPinned] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
-    const [lastResult, setLastResult] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(result);
-    if (lastResult !== result) {
-        setLastResult(result);
-        setPage(0);
-        setPinned(null);
-    }
-    const indices = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
-        if (!result) return [];
-        const idx = result.cycles.map((_, i)=>i);
-        if (sortByCost) idx.sort((a, b)=>result.cycles[a].cost - result.cycles[b].cost || a - b);
-        return idx;
-    }, [
-        result,
-        sortByCost
+function ResultsPanel({ result, preview, selected, onPreview, onSelect }) {
+    const cycles = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>result?.cycles.map((cycle, index)=>({
+                cycle,
+                index
+            })).sort((a, b)=>a.cycle.cost - b.cycle.cost) ?? [], [
+        result
     ]);
-    const pageCount = Math.max(1, Math.ceil(indices.length / PAGE_SIZE));
-    const visible = indices.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
-    const best = result?.best ?? null;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
-                    children: "Resultados"
+                    children: "Resultados de la exploración"
                 }, void 0, false, {
                     fileName: "[project]/components/tsp/results-panel.tsx",
-                    lineNumber: 60,
-                    columnNumber: 9
+                    lineNumber: 29,
+                    columnNumber: 28
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/tsp/results-panel.tsx",
-                lineNumber: 59,
-                columnNumber: 7
+                lineNumber: 29,
+                columnNumber: 16
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
                 className: "flex flex-col gap-4",
@@ -1169,411 +1183,502 @@ function ResultsPanel({ result, previewIndex, onPreview, onExport, onReset, hasE
                         children: "Sin resultados todavía."
                     }, void 0, false, {
                         fileName: "[project]/components/tsp/results-panel.tsx",
-                        lineNumber: 64,
-                        columnNumber: 11
+                        lineNumber: 30,
+                        columnNumber: 17
                     }, this),
-                    result && !best && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Alert"], {
+                    result?.best && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid gap-3 md:grid-cols-[auto_1fr_auto]",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Stat, {
+                                label: "Ciclos Hamiltonianos",
+                                value: String(result.cycles.length)
+                            }, void 0, false, {
+                                fileName: "[project]/components/tsp/results-panel.tsx",
+                                lineNumber: 31,
+                                columnNumber: 79
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex min-w-0 flex-col gap-2 rounded-lg border border-route/30 bg-route/5 p-4",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "flex items-center gap-1.5 text-xs font-medium text-route",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__["Trophy"], {
+                                                className: "size-3.5"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/tsp/results-panel.tsx",
+                                                lineNumber: 31,
+                                                columnNumber: 322
+                                            }, this),
+                                            "Ruta óptima"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/tsp/results-panel.tsx",
+                                        lineNumber: 31,
+                                        columnNumber: 247
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "font-mono text-sm",
+                                        children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tsp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["formatRoute"])(result.best.route)
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/tsp/results-panel.tsx",
+                                        lineNumber: 31,
+                                        columnNumber: 371
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/tsp/results-panel.tsx",
+                                lineNumber: 31,
+                                columnNumber: 153
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Stat, {
+                                label: "Costo mínimo",
+                                value: String(result.best.cost),
+                                accent: true
+                            }, void 0, false, {
+                                fileName: "[project]/components/tsp/results-panel.tsx",
+                                lineNumber: 31,
+                                columnNumber: 452
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/tsp/results-panel.tsx",
+                        lineNumber: 31,
+                        columnNumber: 22
+                    }, this),
+                    result && !result.best && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Alert"], {
                         variant: "destructive",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$triangle$2d$alert$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertTriangle$3e$__["AlertTriangle"], {
-                                "aria-hidden": "true"
-                            }, void 0, false, {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$triangle$2d$alert$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertTriangle$3e$__["AlertTriangle"], {}, void 0, false, {
                                 fileName: "[project]/components/tsp/results-panel.tsx",
-                                lineNumber: 71,
-                                columnNumber: 13
+                                lineNumber: 32,
+                                columnNumber: 61
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertTitle"], {
-                                children: "Sin solución"
+                                children: "Sin ciclo Hamiltoniano"
                             }, void 0, false, {
                                 fileName: "[project]/components/tsp/results-panel.tsx",
-                                lineNumber: 72,
-                                columnNumber: 13
+                                lineNumber: 32,
+                                columnNumber: 78
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$alert$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AlertDescription"], {
-                                children: "El grafo no contiene un ciclo Hamiltoniano; no se puede resolver el TSP."
+                                children: "Revisa los ciclos incompletos y agrega las aristas indicadas."
                             }, void 0, false, {
                                 fileName: "[project]/components/tsp/results-panel.tsx",
-                                lineNumber: 73,
-                                columnNumber: 13
+                                lineNumber: 32,
+                                columnNumber: 125
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/tsp/results-panel.tsx",
-                        lineNumber: 70,
-                        columnNumber: 11
+                        lineNumber: 32,
+                        columnNumber: 32
                     }, this),
-                    result && best && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                    result && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-col gap-4",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "grid gap-3 md:grid-cols-[auto_1fr_auto]",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Stat, {
-                                        label: "Ciclos Hamiltonianos",
-                                        value: result.cycles.length.toLocaleString('es')
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/tsp/results-panel.tsx",
-                                        lineNumber: 82,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex min-w-0 flex-col gap-2 rounded-lg border border-route/30 bg-route/5 p-4",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "flex items-center gap-1.5 text-xs font-medium text-route",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__["Trophy"], {
-                                                        className: "size-3.5",
-                                                        "aria-hidden": "true"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/components/tsp/results-panel.tsx",
-                                                        lineNumber: 85,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    "Ruta óptima"
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/components/tsp/results-panel.tsx",
-                                                lineNumber: 84,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex flex-wrap items-center gap-1",
-                                                "aria-label": (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tsp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["formatRoute"])(best.route),
-                                                children: best.route.map((node, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "flex items-center gap-1",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Badge"], {
-                                                                className: "bg-route font-mono text-white tabular-nums",
-                                                                children: node
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/components/tsp/results-panel.tsx",
-                                                                lineNumber: 91,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            i < best.route.length - 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "text-muted-foreground",
-                                                                "aria-hidden": "true",
-                                                                children: "→"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/components/tsp/results-panel.tsx",
-                                                                lineNumber: 93,
-                                                                columnNumber: 25
-                                                            }, this)
-                                                        ]
-                                                    }, i, true, {
-                                                        fileName: "[project]/components/tsp/results-panel.tsx",
-                                                        lineNumber: 90,
-                                                        columnNumber: 21
-                                                    }, this))
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/tsp/results-panel.tsx",
-                                                lineNumber: 88,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/tsp/results-panel.tsx",
-                                        lineNumber: 83,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Stat, {
-                                        label: "Costo mínimo",
-                                        value: String(best.cost),
-                                        accent: true
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/tsp/results-panel.tsx",
-                                        lineNumber: 101,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(CycleList, {
+                                cycles: cycles,
+                                best: result.best,
+                                preview: preview,
+                                selected: selected,
+                                onPreview: onPreview,
+                                onSelect: onSelect
+                            }, `valid-${result.elapsedMs}`, false, {
                                 fileName: "[project]/components/tsp/results-panel.tsx",
-                                lineNumber: 81,
-                                columnNumber: 13
+                                lineNumber: 33,
+                                columnNumber: 53
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "rounded-lg border",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex flex-wrap items-center justify-between gap-2 border-b px-3 py-2",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            type: "button",
-                                            onClick: ()=>setOpen((o)=>!o),
-                                            "aria-expanded": open,
-                                            className: "flex items-center gap-1.5 text-sm font-medium",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
-                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('size-4 transition-transform', !open && '-rotate-90'),
-                                                    "aria-hidden": "true"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/tsp/results-panel.tsx",
-                                                    lineNumber: 112,
-                                                    columnNumber: 19
-                                                }, this),
-                                                "Ciclos detectados"
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/tsp/results-panel.tsx",
-                                            lineNumber: 106,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/tsp/results-panel.tsx",
-                                        lineNumber: 105,
-                                        columnNumber: 15
-                                    }, this),
-                                    open && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "max-h-96 overflow-y-auto",
-                                                onMouseLeave: ()=>onPreview(pinned),
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Table"], {
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHeader"], {
-                                                            className: "sticky top-0 bg-card",
-                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
-                                                                        className: "w-16",
-                                                                        children: "#"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/components/tsp/results-panel.tsx",
-                                                                        lineNumber: 124,
-                                                                        columnNumber: 27
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
-                                                                        children: "Ruta"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/components/tsp/results-panel.tsx",
-                                                                        lineNumber: 125,
-                                                                        columnNumber: 27
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
-                                                                        className: "w-28 text-right",
-                                                                        children: "Costo total"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/components/tsp/results-panel.tsx",
-                                                                        lineNumber: 126,
-                                                                        columnNumber: 27
-                                                                    }, this)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/components/tsp/results-panel.tsx",
-                                                                lineNumber: 123,
-                                                                columnNumber: 25
-                                                            }, this)
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/tsp/results-panel.tsx",
-                                                            lineNumber: 122,
-                                                            columnNumber: 23
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableBody"], {
-                                                            children: visible.map((i)=>{
-                                                                const c = result.cycles[i];
-                                                                const isBest = c.cost === best.cost;
-                                                                const isActive = previewIndex === i;
-                                                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
-                                                                    tabIndex: 0,
-                                                                    "aria-selected": pinned === i,
-                                                                    onMouseEnter: ()=>onPreview(i),
-                                                                    onFocus: ()=>onPreview(i),
-                                                                    onClick: ()=>{
-                                                                        const next = pinned === i ? null : i;
-                                                                        setPinned(next);
-                                                                        onPreview(next);
-                                                                    },
-                                                                    onKeyDown: (e)=>{
-                                                                        if (e.key === 'Enter' || e.key === ' ') {
-                                                                            e.preventDefault();
-                                                                            const next = pinned === i ? null : i;
-                                                                            setPinned(next);
-                                                                            onPreview(next);
-                                                                        }
-                                                                    },
-                                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('cursor-pointer', isActive && 'bg-preview/10 hover:bg-preview/10', pinned === i && 'ring-1 ring-inset ring-preview'),
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
-                                                                            className: "font-mono text-muted-foreground tabular-nums",
-                                                                            children: i + 1
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/components/tsp/results-panel.tsx",
-                                                                            lineNumber: 160,
-                                                                            columnNumber: 31
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
-                                                                            className: "font-mono text-sm",
-                                                                            children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tsp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["formatRoute"])(c.route)
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/components/tsp/results-panel.tsx",
-                                                                            lineNumber: 161,
-                                                                            columnNumber: 31
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
-                                                                            className: "text-right font-mono tabular-nums",
-                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                className: "inline-flex items-center gap-2",
-                                                                                children: [
-                                                                                    isBest && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Badge"], {
-                                                                                        className: "bg-route text-white",
-                                                                                        "aria-label": "Óptimo",
-                                                                                        children: "óptimo"
-                                                                                    }, void 0, false, {
-                                                                                        fileName: "[project]/components/tsp/results-panel.tsx",
-                                                                                        lineNumber: 165,
-                                                                                        columnNumber: 37
-                                                                                    }, this),
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])(isBest && 'font-semibold text-route'),
-                                                                                        children: c.cost
-                                                                                    }, void 0, false, {
-                                                                                        fileName: "[project]/components/tsp/results-panel.tsx",
-                                                                                        lineNumber: 169,
-                                                                                        columnNumber: 35
-                                                                                    }, this)
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/components/tsp/results-panel.tsx",
-                                                                                lineNumber: 163,
-                                                                                columnNumber: 33
-                                                                            }, this)
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/components/tsp/results-panel.tsx",
-                                                                            lineNumber: 162,
-                                                                            columnNumber: 31
-                                                                        }, this)
-                                                                    ]
-                                                                }, i, true, {
-                                                                    fileName: "[project]/components/tsp/results-panel.tsx",
-                                                                    lineNumber: 135,
-                                                                    columnNumber: 29
-                                                                }, this);
-                                                            })
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/tsp/results-panel.tsx",
-                                                            lineNumber: 129,
-                                                            columnNumber: 23
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/components/tsp/results-panel.tsx",
-                                                    lineNumber: 121,
-                                                    columnNumber: 21
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/tsp/results-panel.tsx",
-                                                lineNumber: 120,
-                                                columnNumber: 19
-                                            }, this),
-                                            pageCount > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex items-center justify-between border-t px-3 py-2 text-xs text-muted-foreground",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "tabular-nums",
-                                                        children: [
-                                                            page * PAGE_SIZE + 1,
-                                                            "–",
-                                                            Math.min((page + 1) * PAGE_SIZE, indices.length),
-                                                            " de",
-                                                            ' ',
-                                                            indices.length.toLocaleString('es')
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/components/tsp/results-panel.tsx",
-                                                        lineNumber: 180,
-                                                        columnNumber: 23
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "flex items-center gap-1",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                                                                variant: "outline",
-                                                                size: "icon-xs",
-                                                                onClick: ()=>setPage((p)=>Math.max(0, p - 1)),
-                                                                disabled: page === 0,
-                                                                "aria-label": "Página anterior",
-                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__["ChevronLeft"], {
-                                                                    "aria-hidden": "true"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/components/tsp/results-panel.tsx",
-                                                                    lineNumber: 192,
-                                                                    columnNumber: 27
-                                                                }, this)
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/components/tsp/results-panel.tsx",
-                                                                lineNumber: 185,
-                                                                columnNumber: 25
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "px-2 tabular-nums",
-                                                                children: [
-                                                                    page + 1,
-                                                                    " / ",
-                                                                    pageCount
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "[project]/components/tsp/results-panel.tsx",
-                                                                lineNumber: 194,
-                                                                columnNumber: 25
-                                                            }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                                                                variant: "outline",
-                                                                size: "icon-xs",
-                                                                onClick: ()=>setPage((p)=>Math.min(pageCount - 1, p + 1)),
-                                                                disabled: page >= pageCount - 1,
-                                                                "aria-label": "Página siguiente",
-                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
-                                                                    "aria-hidden": "true"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/components/tsp/results-panel.tsx",
-                                                                    lineNumber: 204,
-                                                                    columnNumber: 27
-                                                                }, this)
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/components/tsp/results-panel.tsx",
-                                                                lineNumber: 197,
-                                                                columnNumber: 25
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/components/tsp/results-panel.tsx",
-                                                        lineNumber: 184,
-                                                        columnNumber: 23
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/components/tsp/results-panel.tsx",
-                                                lineNumber: 179,
-                                                columnNumber: 21
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/tsp/results-panel.tsx",
-                                        lineNumber: 119,
-                                        columnNumber: 17
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(IncompleteCycleList, {
+                                cycles: result.incompleteCycles,
+                                preview: preview,
+                                selected: selected,
+                                onPreview: onPreview,
+                                onSelect: onSelect
+                            }, `incomplete-${result.elapsedMs}`, false, {
                                 fileName: "[project]/components/tsp/results-panel.tsx",
-                                lineNumber: 104,
-                                columnNumber: 13
+                                lineNumber: 33,
+                                columnNumber: 215
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/tsp/results-panel.tsx",
-                        lineNumber: 80,
-                        columnNumber: 11
+                        lineNumber: 33,
+                        columnNumber: 16
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/tsp/results-panel.tsx",
-                lineNumber: 62,
-                columnNumber: 7
+                lineNumber: 29,
+                columnNumber: 92
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/tsp/results-panel.tsx",
-        lineNumber: 58,
-        columnNumber: 5
+        lineNumber: 29,
+        columnNumber: 10
+    }, this);
+}
+function CycleList({ cycles, best, preview, selected, onPreview, onSelect }) {
+    const [page, setPage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
+    const pageCount = Math.max(1, Math.ceil(cycles.length / PAGE_SIZE));
+    const visible = cycles.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "min-w-0 rounded-lg border",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Header, {
+                title: `Ciclos Hamiltonianos (${cycles.length})`,
+                description: "Rutas válidas que usan aristas existentes."
+            }, void 0, false, {
+                fileName: "[project]/components/tsp/results-panel.tsx",
+                lineNumber: 41,
+                columnNumber: 57
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "max-h-96 overflow-auto",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Table"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHeader"], {
+                            className: "sticky top-0 bg-card",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                        children: "#"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/tsp/results-panel.tsx",
+                                        lineNumber: 41,
+                                        columnNumber: 277
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                        children: "Ruta"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/tsp/results-panel.tsx",
+                                        lineNumber: 41,
+                                        columnNumber: 301
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                        className: "text-right",
+                                        children: "Costo"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/tsp/results-panel.tsx",
+                                        lineNumber: 41,
+                                        columnNumber: 328
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/tsp/results-panel.tsx",
+                                lineNumber: 41,
+                                columnNumber: 267
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/tsp/results-panel.tsx",
+                            lineNumber: 41,
+                            columnNumber: 221
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableBody"], {
+                            children: visible.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                    colSpan: 3,
+                                    className: "py-8 text-center text-muted-foreground",
+                                    children: "No se encontraron ciclos válidos."
+                                }, void 0, false, {
+                                    fileName: "[project]/components/tsp/results-panel.tsx",
+                                    lineNumber: 41,
+                                    columnNumber: 449
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/tsp/results-panel.tsx",
+                                lineNumber: 41,
+                                columnNumber: 439
+                            }, this) : visible.map(({ cycle, index })=>{
+                                const route = {
+                                    id: `valid-${index}`,
+                                    route: cycle.route,
+                                    kind: 'preview'
+                                };
+                                const active = selected?.id === route.id || !selected && preview?.id === route.id;
+                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                    tabIndex: 0,
+                                    onMouseEnter: ()=>onPreview(route),
+                                    onMouseLeave: ()=>onPreview(null),
+                                    onFocus: ()=>onPreview(route),
+                                    onClick: ()=>onSelect(selected?.id === route.id ? null : route),
+                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('cursor-pointer', active && 'bg-preview/10'),
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                            className: "font-mono text-muted-foreground",
+                                            children: index + 1
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/tsp/results-panel.tsx",
+                                            lineNumber: 41,
+                                            columnNumber: 1075
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                            className: "font-mono text-xs",
+                                            children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tsp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["formatRoute"])(cycle.route)
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/tsp/results-panel.tsx",
+                                            lineNumber: 41,
+                                            columnNumber: 1153
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                            className: "text-right font-mono",
+                                            children: [
+                                                cycle.cost === best?.cost && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Badge"], {
+                                                    className: "mr-1 bg-route text-white",
+                                                    children: "óptimo"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/tsp/results-panel.tsx",
+                                                    lineNumber: 41,
+                                                    columnNumber: 1306
+                                                }, this),
+                                                cycle.cost
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/tsp/results-panel.tsx",
+                                            lineNumber: 41,
+                                            columnNumber: 1232
+                                        }, this)
+                                    ]
+                                }, index, true, {
+                                    fileName: "[project]/components/tsp/results-panel.tsx",
+                                    lineNumber: 41,
+                                    columnNumber: 805
+                                }, this);
+                            })
+                        }, void 0, false, {
+                            fileName: "[project]/components/tsp/results-panel.tsx",
+                            lineNumber: 41,
+                            columnNumber: 404
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/tsp/results-panel.tsx",
+                    lineNumber: 41,
+                    columnNumber: 214
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/tsp/results-panel.tsx",
+                lineNumber: 41,
+                columnNumber: 174
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Pager, {
+                page: page,
+                pageCount: pageCount,
+                setPage: setPage
+            }, void 0, false, {
+                fileName: "[project]/components/tsp/results-panel.tsx",
+                lineNumber: 41,
+                columnNumber: 1430
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/tsp/results-panel.tsx",
+        lineNumber: 41,
+        columnNumber: 10
+    }, this);
+}
+function IncompleteCycleList({ cycles, preview, selected, onPreview, onSelect }) {
+    const [page, setPage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
+    const pageCount = Math.max(1, Math.ceil(cycles.length / PAGE_SIZE));
+    const visible = cycles.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "min-w-0 rounded-lg border",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Header, {
+                title: `Ciclos incompletos (${cycles.length})`,
+                description: "Al seleccionar uno: azul para aristas existentes y rojo discontinuo para las faltantes."
+            }, void 0, false, {
+                fileName: "[project]/components/tsp/results-panel.tsx",
+                lineNumber: 48,
+                columnNumber: 57
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "max-h-96 overflow-auto",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Table"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHeader"], {
+                            className: "sticky top-0 bg-card",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                        children: "Ruta candidata"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/tsp/results-panel.tsx",
+                                        lineNumber: 48,
+                                        columnNumber: 320
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableHead"], {
+                                        children: "Aristas faltantes"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/tsp/results-panel.tsx",
+                                        lineNumber: 48,
+                                        columnNumber: 357
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/tsp/results-panel.tsx",
+                                lineNumber: 48,
+                                columnNumber: 310
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/tsp/results-panel.tsx",
+                            lineNumber: 48,
+                            columnNumber: 264
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableBody"], {
+                            children: visible.map((cycle, index)=>{
+                                const route = {
+                                    id: `incomplete-${page}-${index}`,
+                                    route: cycle.route,
+                                    kind: 'incomplete',
+                                    missingEdges: cycle.missingEdges
+                                };
+                                const active = selected?.id === route.id || !selected && preview?.id === route.id;
+                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableRow"], {
+                                    tabIndex: 0,
+                                    onMouseEnter: ()=>onPreview(route),
+                                    onMouseLeave: ()=>onPreview(null),
+                                    onFocus: ()=>onPreview(route),
+                                    onClick: ()=>onSelect(selected?.id === route.id ? null : route),
+                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('cursor-pointer', active && 'bg-destructive/10'),
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                            className: "font-mono text-xs",
+                                            children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tsp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["formatRoute"])(cycle.route)
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/tsp/results-panel.tsx",
+                                            lineNumber: 48,
+                                            columnNumber: 980
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TableCell"], {
+                                            className: "font-mono text-xs text-destructive",
+                                            children: cycle.missingEdges.map(([from, to])=>`${from}–${to}`).join(', ')
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/tsp/results-panel.tsx",
+                                            lineNumber: 48,
+                                            columnNumber: 1059
+                                        }, this)
+                                    ]
+                                }, route.id, true, {
+                                    fileName: "[project]/components/tsp/results-panel.tsx",
+                                    lineNumber: 48,
+                                    columnNumber: 703
+                                }, this);
+                            })
+                        }, void 0, false, {
+                            fileName: "[project]/components/tsp/results-panel.tsx",
+                            lineNumber: 48,
+                            columnNumber: 422
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/tsp/results-panel.tsx",
+                    lineNumber: 48,
+                    columnNumber: 257
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/tsp/results-panel.tsx",
+                lineNumber: 48,
+                columnNumber: 217
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Pager, {
+                page: page,
+                pageCount: pageCount,
+                setPage: setPage
+            }, void 0, false, {
+                fileName: "[project]/components/tsp/results-panel.tsx",
+                lineNumber: 48,
+                columnNumber: 1238
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/tsp/results-panel.tsx",
+        lineNumber: 48,
+        columnNumber: 10
+    }, this);
+}
+function Header({ title, description }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "border-b p-3",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                className: "font-medium",
+                children: title
+            }, void 0, false, {
+                fileName: "[project]/components/tsp/results-panel.tsx",
+                lineNumber: 51,
+                columnNumber: 120
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: "text-xs text-muted-foreground",
+                children: description
+            }, void 0, false, {
+                fileName: "[project]/components/tsp/results-panel.tsx",
+                lineNumber: 51,
+                columnNumber: 160
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/tsp/results-panel.tsx",
+        lineNumber: 51,
+        columnNumber: 90
+    }, this);
+}
+function Pager({ page, pageCount, setPage }) {
+    if (pageCount <= 1) return null;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "flex items-center justify-end gap-2 border-t p-2",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                variant: "outline",
+                size: "icon-xs",
+                "aria-label": "Página anterior",
+                disabled: page === 0,
+                onClick: ()=>setPage((current)=>current - 1),
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__["ChevronLeft"], {}, void 0, false, {
+                    fileName: "[project]/components/tsp/results-panel.tsx",
+                    lineNumber: 52,
+                    columnNumber: 386
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/tsp/results-panel.tsx",
+                lineNumber: 52,
+                columnNumber: 244
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "text-xs",
+                children: [
+                    page + 1,
+                    " / ",
+                    pageCount
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/tsp/results-panel.tsx",
+                lineNumber: 52,
+                columnNumber: 410
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                variant: "outline",
+                size: "icon-xs",
+                "aria-label": "Página siguiente",
+                disabled: page === pageCount - 1,
+                onClick: ()=>setPage((current)=>current + 1),
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {}, void 0, false, {
+                    fileName: "[project]/components/tsp/results-panel.tsx",
+                    lineNumber: 52,
+                    columnNumber: 622
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/tsp/results-panel.tsx",
+                lineNumber: 52,
+                columnNumber: 467
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/tsp/results-panel.tsx",
+        lineNumber: 52,
+        columnNumber: 178
     }, this);
 }
 function Stat({ label, value, accent }) {
@@ -1581,26 +1686,26 @@ function Stat({ label, value, accent }) {
         className: "flex min-w-36 flex-col gap-1 rounded-lg border bg-muted/40 p-4",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                className: "text-xs font-medium text-muted-foreground",
+                className: "text-xs text-muted-foreground",
                 children: label
             }, void 0, false, {
                 fileName: "[project]/components/tsp/results-panel.tsx",
-                lineNumber: 222,
-                columnNumber: 7
+                lineNumber: 53,
+                columnNumber: 182
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('text-3xl font-semibold tabular-nums', accent && 'text-route'),
+                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('text-3xl font-semibold', accent && 'text-route'),
                 children: value
             }, void 0, false, {
                 fileName: "[project]/components/tsp/results-panel.tsx",
-                lineNumber: 223,
-                columnNumber: 7
+                lineNumber: 53,
+                columnNumber: 244
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/tsp/results-panel.tsx",
-        lineNumber: 221,
-        columnNumber: 5
+        lineNumber: 53,
+        columnNumber: 102
     }, this);
 }
 }),
@@ -1631,20 +1736,22 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tsp$2f$results
 function TspDashboard() {
     const [nodeCount, setNodeCount] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(6);
     const [mode, setMode] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('random');
-    const [edges, setEdges] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tsp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SAMPLE_EDGES"]);
+    const [edges, setEdges] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
     const [range, setRange] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
         min: 1,
         max: 20
     });
     const [result, setResult] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
-    const [previewIndex, setPreviewIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [preview, setPreview] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [selected, setSelected] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const matrix = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tsp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["buildMatrix"])(nodeCount, edges), [
         nodeCount,
         edges
     ]);
     const invalidate = ()=>{
         setResult(null);
-        setPreviewIndex(null);
+        setPreview(null);
+        setSelected(null);
     };
     const handleNodeCount = (n)=>{
         setNodeCount(n);
@@ -1659,7 +1766,8 @@ function TspDashboard() {
         handleEdges((0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tsp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["generateRandomGraph"])(nodeCount, range.min, range.max));
     };
     const handleSolve = ()=>{
-        setPreviewIndex(null);
+        setPreview(null);
+        setSelected(null);
         setResult((0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$tsp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["solveTsp"])(nodeCount, edges));
     };
     const handleReset = ()=>{
@@ -1690,13 +1798,11 @@ function TspDashboard() {
         a.click();
         URL.revokeObjectURL(url);
     };
-    const highlighted = previewIndex !== null && result ? {
-        route: result.cycles[previewIndex].route,
-        kind: 'preview'
-    } : result?.best ? {
+    const highlighted = selected ?? preview ?? (result?.best ? {
+        id: 'optimal',
         route: result.best.route,
         kind: 'optimal'
-    } : null;
+    } : null);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "min-h-dvh bg-muted/40",
         children: [
@@ -1712,12 +1818,12 @@ function TspDashboard() {
                                 "aria-hidden": "true"
                             }, void 0, false, {
                                 fileName: "[project]/components/tsp/tsp-dashboard.tsx",
-                                lineNumber: 95,
+                                lineNumber: 94,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/tsp/tsp-dashboard.tsx",
-                            lineNumber: 94,
+                            lineNumber: 93,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1726,23 +1832,23 @@ function TspDashboard() {
                                 children: "Problema del Viajante (TSP)"
                             }, void 0, false, {
                                 fileName: "[project]/components/tsp/tsp-dashboard.tsx",
-                                lineNumber: 98,
+                                lineNumber: 97,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/tsp/tsp-dashboard.tsx",
-                            lineNumber: 97,
+                            lineNumber: 96,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/tsp/tsp-dashboard.tsx",
-                    lineNumber: 93,
+                    lineNumber: 92,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/tsp/tsp-dashboard.tsx",
-                lineNumber: 92,
+                lineNumber: 91,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -1760,15 +1866,16 @@ function TspDashboard() {
                             range: range,
                             onRangeChange: setRange,
                             onGenerate: handleGenerate,
-                            onSolve: handleSolve
+                            onSolve: handleSolve,
+                            onReset: handleReset
                         }, void 0, false, {
                             fileName: "[project]/components/tsp/tsp-dashboard.tsx",
-                            lineNumber: 107,
+                            lineNumber: 106,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/tsp/tsp-dashboard.tsx",
-                        lineNumber: 106,
+                        lineNumber: 105,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1788,7 +1895,9 @@ function TspDashboard() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tsp$2f$cost$2d$matrix$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CostMatrix"], {
                                         matrix: matrix,
-                                        highlightedRoute: highlighted?.route ?? null
+                                        highlightedRoute: highlighted?.route ?? null,
+                                        missingEdges: highlighted?.missingEdges ?? [],
+                                        highlightKind: highlighted?.kind ?? null
                                     }, void 0, false, {
                                         fileName: "[project]/components/tsp/tsp-dashboard.tsx",
                                         lineNumber: 128,
@@ -1802,14 +1911,16 @@ function TspDashboard() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tsp$2f$results$2d$panel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ResultsPanel"], {
                                 result: result,
-                                previewIndex: previewIndex,
-                                onPreview: setPreviewIndex,
+                                preview: preview,
+                                selected: selected,
+                                onPreview: setPreview,
+                                onSelect: setSelected,
                                 onExport: handleExport,
                                 onReset: handleReset,
                                 hasEdges: edges.length > 0
                             }, void 0, false, {
                                 fileName: "[project]/components/tsp/tsp-dashboard.tsx",
-                                lineNumber: 130,
+                                lineNumber: 135,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -1821,13 +1932,13 @@ function TspDashboard() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/tsp/tsp-dashboard.tsx",
-                lineNumber: 105,
+                lineNumber: 104,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/tsp/tsp-dashboard.tsx",
-        lineNumber: 91,
+        lineNumber: 90,
         columnNumber: 5
     }, this);
 }
@@ -2596,24 +2707,40 @@ function solveTsp(n, edges) {
     const start = performance.now();
     const m = buildMatrix(n, edges);
     const cycles = [];
+    const incompleteCycles = [];
     let best = null;
     const path = [
         0
     ];
     const visited = new Array(n).fill(false);
     visited[0] = true;
-    const dfs = (cost)=>{
-        const last = path[path.length - 1];
+    const dfs = ()=>{
         if (path.length === n) {
-            const back = m[last][0];
-            if (back === Infinity) return;
             if (n > 2 && path[1] > path[n - 1]) return;
+            const route = [
+                ...path,
+                0
+            ].map((i)=>i + 1);
+            const missingEdges = [];
+            let cost = 0;
+            for(let i = 0; i < route.length - 1; i++){
+                const weight = m[route[i] - 1][route[i + 1] - 1];
+                if (weight === Infinity) missingEdges.push([
+                    route[i],
+                    route[i + 1]
+                ]);
+                else cost += weight;
+            }
+            if (missingEdges.length > 0) {
+                incompleteCycles.push({
+                    route,
+                    missingEdges
+                });
+                return;
+            }
             const cycle = {
-                route: [
-                    ...path,
-                    0
-                ].map((i)=>i + 1),
-                cost: cost + back
+                route,
+                cost
             };
             cycles.push(cycle);
             if (!best || cycle.cost < best.cost) best = cycle;
@@ -2621,18 +2748,17 @@ function solveTsp(n, edges) {
         }
         for(let next = 1; next < n; next++){
             if (visited[next]) continue;
-            const w = m[last][next];
-            if (w === Infinity) continue;
             visited[next] = true;
             path.push(next);
-            dfs(cost + w);
+            dfs();
             path.pop();
             visited[next] = false;
         }
     };
-    dfs(0);
+    dfs();
     return {
         cycles,
+        incompleteCycles,
         best,
         elapsedMs: performance.now() - start
     };

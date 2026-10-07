@@ -1,9 +1,11 @@
 export type Edge = { u: number; v: number; w: number }
 
 export type Cycle = { route: number[]; cost: number }
+export type IncompleteCycle = { route: number[]; missingEdges: Array<[number, number]> }
 
 export type TspResult = {
   cycles: Cycle[]
+  incompleteCycles: IncompleteCycle[]
   best: Cycle | null
   elapsedMs: number
 }
@@ -29,28 +31,38 @@ export function buildMatrix(n: number, edges: Edge[]): number[][] {
 
 /**
  * Brute force: fixes node 1 as the start and explores every permutation of the
- * remaining nodes via DFS, pruning missing edges. Reversed duplicates are
- * skipped by requiring route[1] < route[n-1].
+ * remaining nodes. Reversed duplicates are skipped by requiring
+ * route[1] < route[n-1]. It also records routes that are not valid cycles.
  */
 export function solveTsp(n: number, edges: Edge[]): TspResult {
   const start = performance.now()
   const m = buildMatrix(n, edges)
   const cycles: Cycle[] = []
+  const incompleteCycles: IncompleteCycle[] = []
   let best: Cycle | null = null
 
   const path = [0]
   const visited = new Array(n).fill(false)
   visited[0] = true
 
-  const dfs = (cost: number) => {
-    const last = path[path.length - 1]
+  const dfs = () => {
     if (path.length === n) {
-      const back = m[last][0]
-      if (back === Infinity) return
       if (n > 2 && path[1] > path[n - 1]) return
+      const route = [...path, 0].map((i) => i + 1)
+      const missingEdges: Array<[number, number]> = []
+      let cost = 0
+      for (let i = 0; i < route.length - 1; i++) {
+        const weight = m[route[i] - 1][route[i + 1] - 1]
+        if (weight === Infinity) missingEdges.push([route[i], route[i + 1]])
+        else cost += weight
+      }
+      if (missingEdges.length > 0) {
+        incompleteCycles.push({ route, missingEdges })
+        return
+      }
       const cycle: Cycle = {
-        route: [...path, 0].map((i) => i + 1),
-        cost: cost + back,
+        route,
+        cost,
       }
       cycles.push(cycle)
       if (!best || cycle.cost < best.cost) best = cycle
@@ -58,18 +70,16 @@ export function solveTsp(n: number, edges: Edge[]): TspResult {
     }
     for (let next = 1; next < n; next++) {
       if (visited[next]) continue
-      const w = m[last][next]
-      if (w === Infinity) continue
       visited[next] = true
       path.push(next)
-      dfs(cost + w)
+      dfs()
       path.pop()
       visited[next] = false
     }
   }
 
-  dfs(0)
-  return { cycles, best, elapsedMs: performance.now() - start }
+  dfs()
+  return { cycles, incompleteCycles, best, elapsedMs: performance.now() - start }
 }
 
 function randInt(min: number, max: number) {

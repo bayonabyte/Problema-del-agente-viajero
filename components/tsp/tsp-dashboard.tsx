@@ -5,13 +5,12 @@ import { Route } from 'lucide-react'
 import {
   type Edge,
   type TspResult,
-  SAMPLE_EDGES,
   buildMatrix,
   generateRandomGraph,
   solveTsp,
 } from '@/lib/tsp'
 import { ConfigPanel } from './config-panel'
-import { GraphCanvas } from './graph-canvas'
+import { GraphCanvas, type HighlightedRoute } from './graph-canvas'
 import { CostMatrix } from './cost-matrix'
 import { ResultsPanel } from './results-panel'
 
@@ -20,16 +19,18 @@ export type Mode = 'random' | 'manual'
 export function TspDashboard() {
   const [nodeCount, setNodeCount] = useState(6)
   const [mode, setMode] = useState<Mode>('random')
-  const [edges, setEdges] = useState<Edge[]>(SAMPLE_EDGES)
+  const [edges, setEdges] = useState<Edge[]>([])
   const [range, setRange] = useState({ min: 1, max: 20 })
   const [result, setResult] = useState<TspResult | null>(null)
-  const [previewIndex, setPreviewIndex] = useState<number | null>(null)
+  const [preview, setPreview] = useState<HighlightedRoute | null>(null)
+  const [selected, setSelected] = useState<HighlightedRoute | null>(null)
 
   const matrix = useMemo(() => buildMatrix(nodeCount, edges), [nodeCount, edges])
 
   const invalidate = () => {
     setResult(null)
-    setPreviewIndex(null)
+    setPreview(null)
+    setSelected(null)
   }
 
   const handleNodeCount = (n: number) => {
@@ -48,7 +49,8 @@ export function TspDashboard() {
   }
 
   const handleSolve = () => {
-    setPreviewIndex(null)
+    setPreview(null)
+    setSelected(null)
     setResult(solveTsp(nodeCount, edges))
   }
 
@@ -80,12 +82,9 @@ export function TspDashboard() {
     URL.revokeObjectURL(url)
   }
 
-  const highlighted =
-    previewIndex !== null && result
-      ? { route: result.cycles[previewIndex].route, kind: 'preview' as const }
-      : result?.best
-        ? { route: result.best.route, kind: 'optimal' as const }
-        : null
+  const highlighted = selected ?? preview ?? (result?.best
+    ? { id: 'optimal', route: result.best.route, kind: 'optimal' as const }
+    : null)
 
   return (
     <div className="min-h-dvh bg-muted/40">
@@ -115,6 +114,7 @@ export function TspDashboard() {
             onRangeChange={setRange}
             onGenerate={handleGenerate}
             onSolve={handleSolve}
+            onReset={handleReset}
           />
         </aside>
 
@@ -125,12 +125,19 @@ export function TspDashboard() {
               edges={edges}
               highlighted={highlighted}
             />
-            <CostMatrix matrix={matrix} highlightedRoute={highlighted?.route ?? null} />
+            <CostMatrix
+              matrix={matrix}
+              highlightedRoute={highlighted?.route ?? null}
+              missingEdges={highlighted?.missingEdges ?? []}
+              highlightKind={highlighted?.kind ?? null}
+            />
           </div>
           <ResultsPanel
             result={result}
-            previewIndex={previewIndex}
-            onPreview={setPreviewIndex}
+            preview={preview}
+            selected={selected}
+            onPreview={setPreview}
+            onSelect={setSelected}
             onExport={handleExport}
             onReset={handleReset}
             hasEdges={edges.length > 0}

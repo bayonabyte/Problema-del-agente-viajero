@@ -7,7 +7,14 @@ import { type Edge, edgeKey } from '@/lib/tsp'
 type Props = {
   nodeCount: number
   edges: Edge[]
-  highlighted: { route: number[]; kind: 'optimal' | 'preview' } | null
+  highlighted: HighlightedRoute | null
+}
+
+export type HighlightedRoute = {
+  id: string
+  route: number[]
+  kind: 'optimal' | 'preview' | 'incomplete'
+  missingEdges?: Array<[number, number]>
 }
 
 const SIZE = 440
@@ -34,13 +41,18 @@ export function GraphCanvas({ nodeCount, edges, highlighted }: Props) {
     return map
   }, [highlighted])
 
+  const missingEdges = useMemo(
+    () => new Set((highlighted?.missingEdges ?? []).map(([from, to]) => edgeKey(from, to))),
+    [highlighted],
+  )
+
   const order = useMemo(() => {
     const m = new Map<number, number>()
     highlighted?.route.slice(0, -1).forEach((node, i) => m.set(node, i + 1))
     return m
   }, [highlighted])
 
-  const accent = highlighted?.kind === 'preview' ? 'var(--preview)' : 'var(--route)'
+  const accent = highlighted?.kind === 'optimal' ? 'var(--route)' : 'var(--preview)'
 
   return (
     <Card className="min-w-0">
@@ -64,6 +76,9 @@ export function GraphCanvas({ nodeCount, edges, highlighted }: Props) {
           <defs>
             <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
               <path d="M0,0 L10,5 L0,10 z" fill={accent} />
+            </marker>
+            <marker id="arrow-missing" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="var(--muted-foreground)" />
             </marker>
           </defs>
 
@@ -95,6 +110,7 @@ export function GraphCanvas({ nodeCount, edges, highlighted }: Props) {
             const len = Math.hypot(dx, dy)
             const ox = (dx / len) * (NODE_R + 3)
             const oy = (dy / len) * (NODE_R + 3)
+            const missing = missingEdges.has(key)
             return (
               <line
                 key={key}
@@ -102,11 +118,11 @@ export function GraphCanvas({ nodeCount, edges, highlighted }: Props) {
                 y1={a.y + oy}
                 x2={b.x - ox}
                 y2={b.y - oy}
-                stroke={accent}
+                stroke={missing ? 'var(--muted-foreground)' : accent}
                 strokeWidth={4}
                 strokeLinecap="round"
-                markerEnd="url(#arrow)"
-                strokeDasharray={highlighted?.kind === 'preview' ? '8 5' : undefined}
+                markerEnd={missing ? 'url(#arrow-missing)' : 'url(#arrow)'}
+                strokeDasharray={missing || highlighted?.kind === 'preview' ? '8 5' : undefined}
               />
             )
           })}
